@@ -30,7 +30,7 @@ message(STATUS "Found ASSIMP in ${ASSIMP_INCLUDE_DIR}")
 # message(STATUS "Found GLEW in ${GLEW_INCLUDE_DIR}")
 
 if(WIN32)
-  set(LIBS glfw3 opengl32 assimp)
+  set(LIBS glfw3 opengl32 assimp glew32s)
 elseif(UNIX AND NOT APPLE)
   set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Wall")
   find_package(OpenGL REQUIRED)
@@ -159,9 +159,21 @@ set(6.pbr
     2.2.2.ibl_specular_textured
 )
 
+# following projects SOIL.lib be added to properties->Linker->Additional Dependencies
+# TO DO: add to configuration...
 set(7.in_practice
     1.debugging
-    # 2.text_rendering
+    2.setting_up
+    3.rendering_sprites
+    4.levels
+    5.1.ball
+    5.2.collision_detection
+    5.3.collision_resolution
+    6.particles
+    7.postprocessing
+    8.powerups
+    9.audio
+    10.render_text
 )
 
 
