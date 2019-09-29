@@ -11,7 +11,7 @@
 #include "sprite_renderer.h"
 #include <learnopengl/filesystem.h>
 
-#define GLFW_INCLUDE_GLCOREARB
+//#define GLFW_INCLUDE_GLCOREARB
 // Game-related State data
 SpriteRenderer  *Renderer;
 

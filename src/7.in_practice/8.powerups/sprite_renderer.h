@@ -16,7 +16,7 @@
 #include "texture.h"
 #include "shader.h"
 
-#define GLFW_INCLUDE_GLCOREARB
+//#define GLFW_INCLUDE_GLCOREARB
 
 class SpriteRenderer
 {
